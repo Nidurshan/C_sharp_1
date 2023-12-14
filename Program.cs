@@ -1,4 +1,6 @@
-﻿namespace C_sharp_1
+﻿using C_sharp_1.Practice_1;
+
+namespace C_sharp_1
 {
     public class Program
     {
@@ -316,9 +318,16 @@
 
             //======================== Interface ==========================
 
-            MyInterface x = new Customer();
-            x.setData();
-            x.getData();
+            //MyInterface x = new Customer();
+            //x.setData();
+            //x.getData();
+
+            Person person = new Person();
+
+            person.SetData();
+            person.GetData();
+
+            
         }
     }
 }
