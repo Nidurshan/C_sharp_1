@@ -13,7 +13,7 @@ namespace C_sharp_1.Practice_4
         {
         }
 
-        public void PrintCurrentDateTime()
+        public virtual void PrintCurrentDateTime()
         {
             DateTime currentDateTime = DateTime.Now;
 

@@ -9,7 +9,8 @@ namespace C_sharp_1
     class HrStudent:SchoolStudent
     {
         public string group;
-        public HrStudent()
+
+        public HrStudent():base()
         {
         }
 

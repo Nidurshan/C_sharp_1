@@ -321,9 +321,9 @@ namespace C_sharp_1
 
             //======================== Interface ==========================
 
-            //MyInterface x = new Customer();
-            //x.setData();
-            //x.getData();
+            MyInterface x = new Customer();
+            x.setData();
+            x.getData();
 
             //==================================================================================================================================
             //==================================================================================================================================
@@ -338,8 +338,8 @@ namespace C_sharp_1
             //Squre squre = new Squre();
             //squre.Find_Area();
 
-            var printDateTime = new PrintDateTime();
-            printDateTime.PrintCurrentDateTime();
+            //var printDateTime = new PrintDateTime();
+            //printDateTime.PrintCurrentDateTime();
         }
     }
 }
