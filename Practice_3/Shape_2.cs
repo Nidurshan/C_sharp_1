@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace C_sharp_1.Practice_3
 {
-    internal class Shape
+    internal class Shape_2
     {
         public virtual int Length { get; set; } = 0;
         public virtual int Width { get; set; } = 0;
 
-        public Shape() 
+        public Shape_2()
         {
         }
 

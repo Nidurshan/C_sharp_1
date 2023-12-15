@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_sharp_1.Practice_3
 {
-    internal class Squre:Shape
+    internal class Squre: Shape_2
     {
         public int SqureArea;
 

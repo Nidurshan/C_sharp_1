@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_sharp_1.Practice_1
 {
-    public class Person
+     public class Person
     {
         public string name;
         public int age;

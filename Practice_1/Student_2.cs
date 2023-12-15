@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace C_sharp_1.Practice_1
 {
-    class Student:Person
+    class Student_2:Person
     {
         public int standard;
         public string section;
         public string school;
 
-        public Student() : base() 
+        public Student_2() : base() 
         {
         }
 

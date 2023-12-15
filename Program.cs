@@ -1,4 +1,7 @@
 ﻿using C_sharp_1.Practice_1;
+using C_sharp_1.Practice_2;
+using C_sharp_1.Practice_3;
+using C_sharp_1.Practice_4;
 
 namespace C_sharp_1
 {
@@ -322,12 +325,21 @@ namespace C_sharp_1
             //x.setData();
             //x.getData();
 
-            Person person = new Person();
+            //==================================================================================================================================
+            //==================================================================================================================================
 
-            person.SetData();
-            person.GetData();
+            //Person student = new Student_2();
+            //student.SetData();
+            //student.GetData();
 
-            
+            //Shape_2 shape = new Shape_2();
+            //shape.SetValues();
+
+            //Squre squre = new Squre();
+            //squre.Find_Area();
+
+            var printDateTime = new PrintDateTime();
+            printDateTime.PrintCurrentDateTime();
         }
     }
 }

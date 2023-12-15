@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace C_sharp_1.Practice_3
 {
-    internal class Rectrangle:Shape
+    internal class Rectrangle_2 : Shape_2
     {
         public int RectrangleArea;
 
-        public Rectrangle() 
+        public Rectrangle_2()
         {
         }
 
