@@ -1,10 +1,269 @@
 ﻿using C_sharp_1.Practice_1;
 using C_sharp_1.Practice_2;
 using C_sharp_1.Practice_3;
-using C_sharp_1.Practice_4;
+using System.Data.Common;
+using System.IO;
+//using C_sharp_1.Practice_4;
 
 namespace C_sharp_1
 {
+    //class Student_3
+    //{
+    //    static public int total_student = 0;
+    //    public int roll;
+    //    public string name;
+    //    public int score;
+
+    //    public Student_3(int roll, string name, int score)
+    //    {
+    //        this.roll = roll;
+    //        this.name = name;
+    //        this.score = score;
+    //        total_student++;
+    //    }
+    //}
+
+    //---------------------------------------------
+
+    //class Circle
+    //{
+    //    //public static int radius;
+    //    public static float pi = 3.14F;
+    //    //public double pi2 = 3.14;
+
+
+    //    public static float area(int radius)
+    //    {
+    //        return pi * radius * radius;
+    //    }
+    //}
+
+    //----------------------------------------------
+
+    //class Employee
+    //{
+    //    public int id;
+    //    public string name;
+    //    public int salary;
+
+    //    public Employee(int id, string name, int salary)
+    //    {
+    //        this.id = id;
+    //        this.name = name;
+    //        this.salary = salary;
+    //    }
+
+    //    public Employee(int id, int salary)
+    //    {
+    //        this.id = id;
+    //        this.salary = salary;
+    //    }
+
+    //    public Employee()
+    //    {
+    //    }
+
+    //    public void setData()
+    //    {
+    //        Console.Write("Enter ID: ");
+    //        id = int.Parse(Console.ReadLine());
+
+    //        Console.Write("Enter Name: ");
+    //        name = Console.ReadLine();
+
+    //        Console.Write("Enter Salary: ");
+    //        salary = int.Parse(Console.ReadLine());
+    //    }
+
+    //    public void setData(int id, string name, int salary)
+    //    {
+    //        this.id = id;
+    //        this.name = name;
+    //        this.salary = salary;
+    //    }
+
+    //    public virtual void display()
+    //    {
+    //        Console.WriteLine(id + "\t" + name);
+    //    }
+    //}
+
+    //class TempEmployee : Employee
+    //{
+    //    public TempEmployee(int id, string name, int salary) : base(id, name, salary)
+    //    {
+
+    //    }
+
+    //    public override void display()
+    //    {
+    //        Console.WriteLine("Temp: " + id + "\t" + name);
+    //    }
+    //}
+
+    //------------------------------------------------------------------------------------
+
+    //class Employee
+    //{
+    //    public int id;
+    //    public string name;
+    //    public int salary;
+
+    //    public Employee(int id, string name, int salary)
+    //    {
+    //        this.id = id;
+    //        this.name = name;
+    //        this.salary = salary;
+    //    }
+
+    //    public Employee(int id, int salary)
+    //    {
+    //        this.id = id;
+    //        this.salary = salary;
+    //    }
+
+    //    public Employee()
+    //    {
+    //    }
+
+    //    public void setData()
+    //    {
+    //        Console.Write("Enter ID: ");
+    //        id = int.Parse(Console.ReadLine());
+
+    //        Console.Write("Enter Name: ");
+    //        name = Console.ReadLine();
+
+    //        Console.Write("Enter Salary: ");
+    //        salary = int.Parse(Console.ReadLine());
+    //    }
+
+    //    public void setData(int id, string name, int salary)
+    //    {
+    //        this.id = id;
+    //        this.name = name;
+    //        this.salary = salary;
+    //    }
+
+    //    public virtual void display()
+    //    {
+    //        Console.WriteLine(id + "\t" + name);
+    //    }
+    //}
+
+    //class TempEmployee : Employee
+    //{
+    //    public TempEmployee(int id, string name, int salary) : base(id, name, salary)
+    //    {
+    //    }
+
+    //    public override void display()
+    //    {
+    //        Console.WriteLine("T: " + id + "\t" + name);
+    //    }
+    //}
+
+    //class Per_Employee : Employee
+    //{
+    //    public Per_Employee(int id, string name, int salary) : base(id, name, salary)
+    //    {
+    //    }
+
+    //    public override void display()
+    //    {
+    //        Console.WriteLine("P: " + id + "\t" + name);
+    //    }
+    //}
+
+    //------------------------------------------------------------------------------------------
+
+    //class Circle
+    //{
+        //private int radius;
+        //private float pi = 3.14f;
+
+        //public int R
+        //{
+        //    get
+        //    {
+        //        return radius;
+        //    }
+        //    set 
+        //    {
+        //        if(value > 0)
+        //        {
+        //            radius = value;
+        //        }
+        //        else
+        //        {
+        //            radius = 1;
+        //        }
+        //    }
+        //}
+
+    //    int R;
+    //    public int r {
+    //        get
+    //        {
+    //            return R;
+    //        }
+    //        set
+    //        {
+    //            if (value > 0)
+    //                R = value;
+    //            else
+    //                R = 1;
+    //        }
+    //    }
+
+    //    private float pi = 3.14f;
+
+    //    public void Area()
+    //    {
+            //Console.WriteLine(pi * r * r);
+    //    }
+    //}
+
+    //class Employee
+    //{
+    //    public int id { get; set; }
+    //    public string name { get; set; }
+    //    public int salary { get; set; }
+    //}
+
+    //-------------------------------------------------------------------------------
+
+    //struct Employee
+    //{
+    //    public int id;
+    //    public string name;
+    //    public int salary;
+
+    //    public Employee(int id, string name, int salary)
+    //    {
+    //        this.id = id;
+    //        this.name = name;
+    //        this.salary = salary;
+    //    }
+
+    //    public void display()
+    //    {
+    //        Console.WriteLine(id + "\t" + name + "\t" + salary);
+    //    }
+
+    //    public void accept()
+    //    {
+    //        Console.Write("Enter ID: ");
+    //        id = int.Parse(Console.ReadLine());
+
+    //        Console.Write("Enter Name: ");
+    //        name = Console.ReadLine();
+
+    //        Console.Write("Enter Salary: ");
+    //        salary = int.Parse(Console.ReadLine());
+    //    }
+    //}
+
     public class Program
     {
         public static void Main(string[] args)
@@ -321,9 +580,217 @@ namespace C_sharp_1
 
             //======================== Interface ==========================
 
-            MyInterface x = new Customer();
-            x.setData();
-            x.getData();
+            //MyInterface x = new Customer();
+            //x.setData();
+            //x.getData();
+
+            //================ Static Members and Instance Members =================
+
+            //Student_3 s = new Student_3(1, "John", 500);
+            //Student_3 s2 = new Student_3(2, "Harry", 475);
+            //Student_3 s3 = new Student_3(3, "Tom", 495);
+
+            //Console.WriteLine(Student_3.total_student);
+
+            //Console.WriteLine(Circle.area(15));
+
+            //======================== Polymorphism =======================
+
+            //Employee e = new Employee(2, "John", 45000);
+            ////Employee e1 = new Employee(2, "John", 55000);
+            ////Employee e2 = new Employee();
+
+            ////e2.setData(3, "John", 15000);
+
+            //TempEmployee e1 = new TempEmployee(2, "Jack", 35000);
+            //e.display();
+            //e1.display();
+
+            //================== Hiding vs Overriding ====================
+
+            // if you want to hide, use the new keyword
+
+            //Employee e = new Employee(1, "John", 45000);
+            //Employee e1 = new TempEmployee(2, "Jack", 35000);
+            //Employee e2 = new Per_Employee(3, "Harry", 35000);
+            //e.display();
+            //e1.display();
+            //e2.display();
+
+            //========================== Properties =========================
+
+            //Circle c = new Circle();
+            //c.R = -121;
+            //c.Area();
+
+            //Circle c = new Circle() { r = -12 };
+            //c.Area();
+
+            //Employee e = new Employee() { id = 1, name = "Peter", salary = 100000 };
+
+            //=========================== Structures =========================
+
+            //Employee e = new Employee(1, "Peter", 50000);
+            //e.display();
+
+            //Employee emp = new Employee();
+            ////emp.id = 1;
+            ////emp.name = "John";
+            ////emp.salary = 50000;
+            ////emp.display();
+            //Employee e1;
+            //e1.id = 10;
+            //e1.name = "Peter";
+            //e1.salary = 10000;
+            //e1.display();
+
+            //e1 = emp;
+            //e1.id = 15;
+            //emp.display();
+            //e1.display();
+
+            //Employee[] employees = new Employee[3];
+            //for(int i = 0; i < employees.Length; i++) 
+            //{
+            //    employees[i].accept();
+            //}
+            //foreach(Employee e in employees)
+            //{
+            //    emp.display();
+            //}
+
+            //============================== File Handling ================================
+            // Use this in file handling: Using System.IO
+
+            //FileStream fs = new FileStream(@"c:\Users\Nidurshan\Desktop\Sample.txt", FileMode.OpenOrCreate);
+            //StreamWriter w = new StreamWriter(fs);
+
+            //w.WriteLine("This is a sample document.");
+            //w.WriteLine("This document is created using C# program");
+            //w.Close();
+            //fs.Close();
+
+            //FileStream fs = new FileStream(@"c:\Users\Nidurshan\Desktop\Sample.txt", FileMode.OpenOrCreate);
+            //StreamReader r = new StreamReader(fs);
+
+            //string line = r.ReadLine();
+
+            //while (line != null)
+            //{
+            //    Console.WriteLine(line);
+            //    line = r.ReadLine();
+            //}
+
+            //FileStream fs = new FileStream(@"c:\Users\Nidurshan\Desktop\books.txt", FileMode.OpenOrCreate);
+            //StreamWriter w = new StreamWriter(fs);
+
+            //string answer = "Y";
+
+            //while (answer == "Y")
+            //{
+            //    Console.Write("Enter Book ID: ");
+            //    string id = Console.ReadLine();
+
+            //    Console.Write("Enter Book Title: ");
+            //    string title = Console.ReadLine();
+
+            //    Console.Write("Enter Book Author: ");
+            //    string author = Console.ReadLine();
+
+            //    string line = $"{id},{title},{author}";
+            //    w.WriteLine(line);
+
+            //    Console.Write("Do you want to Add More Y/N: ");
+            //    answer = Console.ReadLine();
+            //}
+            //w.Close();
+            //fs.Close();
+
+            //FileStream fs2 = new FileStream(@"c:\Users\Nidurshan\Desktop\books.txt", FileMode.OpenOrCreate);
+            //StreamReader r = new StreamReader(fs2);
+
+            //string line2 = r.ReadLine();
+
+            //while (line2 != null)
+            //{
+            //    string[] cols = line2.Split(',');
+            //    Console.WriteLine("ID     : " + cols[0]);
+            //    Console.WriteLine("Title  : " + cols[1]);
+            //    Console.WriteLine("Author : " + cols[2]);
+
+            //    line2 = r.ReadLine();
+            //}
+            //r.Close();
+            //fs2.Close();
+
+            //=========================== Exception Handling ============================
+
+            //int x, y, z;
+            //int[] arr = { 12, 13, 14 };
+
+            //z = 0;
+
+            //Console.Write("Enter value for x: ");
+            //x = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter vlaue for y: ");
+            //y = int.Parse(Console.ReadLine());
+
+            //try
+            //{
+            //    z = x / y;
+            //    Console.WriteLine(arr[5]);
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    Console.WriteLine("y value cannot be zero, rerun the program with a right value");
+            //    while (y == 0)
+            //    {
+            //        Console.Write("Enter Non zero value for Y: ");
+            //        y = int.Parse(Console.ReadLine());
+            //    }
+            //    z = x / y;
+            //}
+            //catch (IndexOutOfRangeException e2)
+            //{
+            //    int n = -1;
+            //    while(n < 0 || n >= arr.Length)
+            //    {
+            //        Console.Write("Enter Proper Index: ");
+            //        n = int.Parse(Console.ReadLine());
+            //    }
+            //    Console.WriteLine(arr[n]);
+            //}
+
+            //z = x / y;
+            //Console.WriteLine("Result: " + z);
+
+            //===================== Advanced Level Exception Handling =====================
+
+            int x = 5;
+            int y = 10;
+            try
+            {
+                int z = x / y;
+                try
+                {
+                    int[] arr = { 12, 13, 14 };
+                    int a = 10;
+                    // Here is an ArithmeticException
+                    int b = 0;
+                    int c = a / b;
+                    // Here is an IndexOutOfRangeException
+                    Console.WriteLine(arr[12]);
+                }
+                catch (IndexOutOfRangeException e1)
+                {
+                    Console.WriteLine("Index Error!!");
+                }
+            }
+            catch (ArithmeticException e)
+            {
+                Console.WriteLine("Error!!");
+            }
 
             //==================================================================================================================================
             //==================================================================================================================================

@@ -14,9 +14,9 @@ namespace C_sharp_1
 
         public void getData()
         {
-            Console.WriteLine("ID       :" + id);
-            Console.WriteLine("Name     :" + name);
-            Console.WriteLine("Credit   :" + price);
+            Console.WriteLine("ID       : " + id);
+            Console.WriteLine("Name     : " + name);
+            Console.WriteLine("Credit   : " + price);
         }
 
         public void setData()
